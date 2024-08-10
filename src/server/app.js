@@ -1,19 +1,8 @@
 const express = require("express");
-var cors = require('cors');
 const path = require("path");
 
 const PORT = process.env.PORT || 3000;
 const STATIC_ASSETS_PATH = path.resolve(`${__dirname}/../../static`);
-
-const app = express();
-function setCorsHeaders(req, res, next) {
-	res.setHeader('Access-Control-Allow-Origin', '*');
-	res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE');
-	res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-	next();
-  }
- 
-  app.use(setCorsHeaders);
 
 // Serve front end assets which have been built by webpack
 app.use("/static", express.static(STATIC_ASSETS_PATH));
