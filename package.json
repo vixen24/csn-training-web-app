@@ -1,0 +1,25 @@
+{
+  "name": "example-app",
+  "scripts": {
+    "build": "webpack --mode production --entry ./src/client/index.js --output-path ./static",
+    "start": "node src/server/app.js"
+  },
+
+  "keywords": [],
+  "author": "William Idakwo",
+  "license": "MIT",
+
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
+    "@sucrase/webpack-loader": "^2.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sucrase": "^3.34.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
