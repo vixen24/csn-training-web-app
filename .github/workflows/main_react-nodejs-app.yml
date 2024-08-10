@@ -58,5 +58,5 @@ jobs:
         with:
           app-name: 'react-nodejs-app'
           slot-name: 'Production'
-          package: node-app/
+          package: .
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_67F86D2683644330B790AFB78EF98F05 }}
