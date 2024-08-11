@@ -53,6 +53,8 @@ jobs:
         run: |
           unzip release.zip
           rm release.zip
+          pwd
+          ls -la
       
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
